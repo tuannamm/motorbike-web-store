@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalabale=no"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>CBR650R</title>
+        <script src="./js/main.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+          rel="stylesheet"
+        />
+        <link 
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+          crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/style.css"/>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+</head>
+<body id="main">
+        <div id="header" class="header">
+            <div id="header-search">
+            <div class="logo" id="img-logo">
+                <img src="./assets/img/footer/mindx.png" alt="">
+            </div>
+            <div class="header-search">
+                <input class="header-search-box" id="search" type="search" placeholder="Tìm kiếm">
+            </div>
+            <div class="header-login">
+            <button type="button" data-toggle="modal" data-target="#myModal">Đăng nhập</button>
+            <button type="button" onclick="fun()" >Đăng ký</button>
+            </div>
+            
+            </div>
+        
+            <ul id="nav">
+                <li>
+                    <a href="#slider">Giới thiệu</a>
+                    <ul class="subnav">
+                        <li><a href="">Giới thiệu Honda Việt Nam</a></li>
+                        <li><a href="">Lịch sử phát triển</a></li>
+                        <li><a href="">Thư của Tổng giám đốc</a></li>
+                        <li><a href="">Triết lý Honda</a></li>
+                        <li><a href="">Tầm nhìn 2030</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#content">Xe máy</a>
+                    <ul class="subnav">
+                        <li><a href="">Sản phẩm</a></li>
+                        <li><a href="">Phụ tùng</a></li>
+                        <li>
+                            <a href="">Phụ kiện</a>
+                            <i class="fa fa-angle-right icon-nav"></i>
+                            <ul class="subnav-sub">
+                               <li><a href="">Phụ kiện xe</a></li>
+                               <li><a href="">Mũ bảo hiểm</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Dịch vụ sau bán hàng</a>
+                            <i class="fa fa-angle-right icon-nav"></i>
+                            <ul class="subnav-sub">
+                                <li><a href="">Chính sách bảo hành</a></li>
+                                <li><a href="">Bảo hành điện tử</a></li>
+                                <li><a href="">Hướng dẫn sử dụng xe</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Tin tức</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#content">Ô Tô</a>
+                    <ul class="subnav">
+                        <li><a href="">Sản phẩm</a></li>
+                        <li><a href="">Phụ tùng</a></li>
+                        <li>
+                            <a href="">Phụ kiện</a>
+                            <i class="fa fa-angle-right icon-nav"></i>
+                            <ul class="subnav-sub">
+                                <li><a href="">Giới thiệu chung</a></li>
+                                <li><a href="">Danh sách phụ kiện</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Dịch vụ sau bán hàng</a>
+                            <i class="fa fa-angle-right icon-nav"></i>
+                            <ul class="subnav-sub">
+                                <li><a href="">Chính sách bảo hành</a></li>
+                                <li><a href="">Bảo hành điện tử</a></li>
+                                <li><a href="">Bảo dưỡng định kỳ</a></li>
+                                <li><a href="">Hướng dẫn sử dụng xe</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#activities-slide">Hoạt động</a>
+                    <ul class="subnav">
+                        <li><a href="">Giới thiệu chung</a></li>
+                        <li><a href="">Hướng dẫn sử dụng</a></li>
+                        <li>
+                            <a href="">Điều khoản sử dụng</a>
+                            <i class="fa fa-angle-right icon-nav"></i>
+                            <ul class="subnav-sub">
+                                <li><a href="">Điều khoản sử dụng  </a></li>
+                                <li><a href="">Chính sách quyền riêng tư</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#news">Tin tức</a>
+                    <ul class="subnav">
+                        <li><a href="">Tin tức chung</a></li>
+                        <li><a href="">Tin tức xe máy</a></li>
+                        <li><a href="">Tin tức ô tô</a></li>
+                        <li><a href="">Doanh số bán hàng</a></li>
+                        <li><a href="">Khuyến mãi</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#review">Đánh giá</a>
+                </li>
+                <li>
+                    <a href="#contact">Liên lạc</a>
+                </li>
+            </ul>
+        </div>
+            <div class="cbr-img">
+                <img src="./assets/img/cbr650/bOpEb8vrBL2h30h1gxWi.png" alt="">
+            </div>
+
+            <div class="cbr-product">
+                <a href="*">Trang chủ</a>
+                <span class="cbr-breadscrumb-arrow">></span>
+                <a  href="*"> Xe máy</a>
+                <span class="cbr-breadscrumb-arrow">></span>
+                <a href="*"> Sản phẩm</a>
+                <span class="cbr-breadscrumb-arrow">></span>
+                <a style="color: slategrey;" href="*">CBR650R phiên bản 2021</a>   
+                <div class="cbr-grid-product">
+                    <div class="cbr-grid-item">
+                        <div class="cbr-characteristics-image">
+                            <img src="./assets/img/cbr650/hinh1.png" alt="">
+                        </div>
+                        <div class="cbr-characteristics-desc">
+                            <h5>Đặc biệt</h5>
+                            <p>
+                                CBR650R - "chiến mã" mạnh mẽ được thiết kế kỳ công để trở thành nhà vô địch trong mọi hành trình. Với kiểu dáng khỏe khoắn, năng động, đậm chất Racing và sức mạnh động cơ tập trung tại dải vòng tua tầm trung, mang lại khả năng bứt tốc hoàn hảo, CBR650R sẽ mang lại những trải nghiệm tốc độ tuyệt đỉnh, đốt cháy mãnh lực nhà vô địch bên trong bạn, dù bạn đang trên đường phố hay trên đường đua.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cbr-grid-item cbr-right">
+                        <h3 style="color: rgb(177, 34, 34);">CBR650R phiên bản 2021</h3>
+                        <h4 class="">Giá từ: 253.990.000 VNĐ</h4>
+                        <div class="cbr-has-submenu">
+                            <h4>THIẾT KẾ</h4> 
+                        </div>
+                        <div class=" cbr-design">
+                            <div class="cbr-design_item">
+                                <img src="./assets/img/cbr650/sinhratrenduong.jpg" alt="">
+                                <p>Sinh ra trên đường đua, chinh phục từng con phố</p>
+                            </div>
+                            <div class="cbr-design_item">
+                                <img src="./assets/img/cbr650/manhinhLCD.png" alt="">
+                                <p>Màn hình LCD thể thao</p>
+                            </div>
+                            <div class="cbr-design_item">
+                                <img src="./assets/img/cbr650/trangbiden.png" alt="">
+                                <p>Trang bị toàn bộ đèn LED</p>
+                            </div>
+                        </div>
+                        <div class="cbr-has-submenu">
+                            <h4>ĐỘNG CƠ - CÔNG NGHỆ</h4> 
+                        </div>
+                        <div class=" cbr-design">
+                            <div class="cbr-design_item">
+                                <img src="./assets/img/cbr650/dongco4.png" alt="">
+                                <p>Động cơ 4 xy lanh mạnh mẽ</p>
+                            </div>
+                            <div class="cbr-design_item">
+                                <img src="./assets/img/cbr650/thietkeongxa.png" alt="">
+                                <p>Thiết kế ống xả mới</p>
+                            </div>
+                            <div class="cbr-design_item">
+                                <img src="./assets/img/cbr650/hẹthongkiemsoat.png" alt="">
+                                <p>Hệ thống kiểm soát lực kéo (HSTC)</p>
+                            </div>
+                        </div>
+                        <div class="cbr-has-submenu">
+                            <h4>TIỆN ÍCH & AN TOÀN</h4> 
+                        </div>
+                        <div class=" cbr-design">
+                            <div class="cbr-design_item">
+                                <img src="./assets/img/cbr650/ngamphanh.png" alt="">
+                                <p>Ngàm phanh Radial Mount</p>
+                            </div>
+                            <div class="cbr-design_item">
+                                <img src="./assets/img/cbr650/giamxoc.png" alt="">
+                                <p>Giảm xóc hành trình ngược Showa SFF-BP</p>
+                            </div>
+                        </div>    
+                    </div>
+                </div>  
+            <div class="cbr-title"> Bảng giá và màu sắc</div>  
+            <div class="cbr-col-line"></div>
+            <div class="cbr-col">
+                <div class="cbr-col-item">
+                    <img src="./assets/img/cbr650/mauden.png" alt="">
+                    <div class="cbr-giatien">
+                        <div class="cbr-line"></div>
+                        <div class="cbr-gia">Giá bán lẻ đề xuất: <span class="cbr-tien">253.990.000 VNĐ</span></div>
+                    </div>
+                </div>
+                <div class="cbr-col-item">
+                    <img src="./assets/img/cbr650/maudo.png" alt="">
+                    <div class="cbr-giatien">
+                        <div class="cbr-line"></div>
+                        <div class="cbr-gia">Giá bán lẻ đề xuất: <span class="cbr-tien">253.990.000 VNĐ</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cbr-title">Thông số kĩ thuật</div>  
+            <div class="cbr-col-line"></div>
+            <div class="cbr-thongso">
+                <div class="cbr-trang">
+                    <div class="cbr-ts">Khối lượng bản thân
+                    <p>208 kg</p>
+                    </div>
+                </div>
+                <div class="cbr-xam">
+                    <div class="cbr-ts">Dài x Rộng x Cao
+                    <p>2.130 mm x 750 mm x 1.150 mm</p>
+                    </div>
+                </div>
+                <div class="cbr-trang">
+                    <div class="cbr-ts">Khoảng cách trục bánh xe
+                    <p>1.450 mm</p>
+                    </div>
+                </div>
+                <div class="cbr-xam">
+                    <div class="cbr-ts">Độ cao yên
+                    <p>810 mm</p>
+                    </div>
+                </div>
+                <div class="cbr-trang">
+                    <div class="cbr-ts">Khoảng sáng gầm xe
+                    <p>130 mm</p>
+                    </div>
+                </div>
+                <div class="cbr-xam">
+                    <div class="cbr-ts">Dung tích bình xăng
+                    <p>15,4 lít</p>
+                    </div>
+                </div>
+                <div class="cbr-trang">
+                    <div class="cbr-ts">Kích cỡ lớp trước/ sau
+                    <p>Lốp trước: 120/70ZR17 M/C<br>Lốp sau: 180/55ZR17 M/C</p>
+                    </div>
+                </div>
+                <div class="cbr-xam">
+                    <div class="cbr-ts">Phuộc trước
+                    <p>Giảm xóc hành trình ngược Showa SFF-BP, 41mm</p>
+                    </div>
+                </div>
+                <div class="cbr-trang">
+                    <div class="cbr-ts">Phuộc sau
+                    <p>Lò trụ đơn với tải trước lò xo có 10 cấp điều chỉnh</p>
+                    </div>
+                </div>
+                <div class="cbr-xam">
+                    <div class="cbr-ts">Loại động cơ
+                    <p>Động cơ 4 xy-lanh, 4 kỳ làm mát bằng chất lỏng, 16 van<br>DOHC</p>
+                    </div>
+                </div>
+                <div class="cbr-trang">
+                    <div class="cbr-ts">Công suất tối đa
+                    <p>70,0 kW/ 12.000 vòng/ phút</p>
+                    </div>
+                </div>
+                <div class="cbr-xam">
+                    <div class="cbr-ts">Dung tích nhớt máy
+                    <p>2,3 lít khi thay nhớ<br>2,6 lít khi thay nhớt và bộ lọc<br>3,0 lít khi rã máy</p>
+                    </div>
+                </div>
+                <div class="cbr-trang">
+                    <div class="cbr-ts">Mức tiêu thụ nhiên liệuy
+                    <p>4,58 lít/100km</p>
+                    </div>
+                </div>
+                <div class="cbr-xam">
+                    <div class="cbr-ts">Hộp số
+                    <p>6 cấp</p>
+                    </div>
+                </div>
+                <div class="cbr-trang">
+                    <div class="cbr-ts">Loại truyền động
+                    <p>Cơ khí</p>
+                    </div>
+                </div>
+                <div class="cbr-xam">
+                    <div class="cbr-ts">Hệ thống khởi động
+                    <p>Điện</p>
+                    </div>
+                </div>
+                <div class="cbr-trang">
+                    <div class="cbr-ts">Moment cực đạ
+                    <p>63 Nm/ 9.500 vòng/ phút</p>
+                    </div>
+                </div>
+                <div class="cbr-xam">
+                    <div class="cbr-ts">Dung tích xy-lanh
+                    <p>649 cc</p>
+                    </div>
+                </div>
+                <div class="cbr-trang">
+                    <div class="cbr-ts">Đường kính x Hành trình pít tông
+                    <p>67 x 46 mm</p>
+                    </div>
+                </div>
+                <div class="cbr-xam">
+                    <div class="cbr-ts">Tỷ số nén
+                    <p>11,6:1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cbr-title">Thư viện</div>  
+            <div class="cbr-col-line"></div>
+            <div class="cbr-thuvien">
+                <div class="cbr-thu">
+                <img src="./assets/img/cbr650/111.jpg" alt="">
+                </div>
+                <div class="cbr-thu">
+                <img src="./assets/img/cbr650/2.png" alt="">
+                </div>
+                <div class="cbr-thu">
+                <img src="./assets/img/cbr650/3.png" alt="">
+                </div>
+                <div class="cbr-thu">
+                <img src="./assets/img/cbr650/4.png" alt="">
+                </div>
+                <div class="cbr-thu">
+                <img src="./assets/img/cbr650/5.png" alt="">
+                </div>
+                <div class="cbr-thu">
+                <img src="./assets/img/cbr650/6.png" alt="">
+                </div>
+                <div class="cbr-thu">
+                <img src="./assets/img/cbr650/7.png" alt="">
+                </div>
+                <div class="cbr-thu">
+                <img src="./assets/img/cbr650/1.png" alt="">
+                </div>
+                <div class="cbr-thu">
+                <img src="./assets/img/cbr650/8.png" alt="">
+                </div>
+                <div class="cbr-thu">
+                <img src="./assets/img/cbr650/9.png" alt="">
+                </div>
+                <div class="cbr-thu">
+                <img src="./assets/img/cbr650/10.png" alt="">
+                </div>
+            </div>
+            <div class="cbr-title">Lịch sử đời xe</div>  
+            <div class="cbr-col-line"></div>
+            <div class="cbr-lichsu">
+                <div class="cbr-doi">
+                    <img src="./assets/img/cbr650/2019.png" alt=""> 
+                    <p>CBR650R 2019</p>
+                </div>
+                <div class="cbr-doi">
+                    <img src="./assets/img/cbr650/2021.png" alt=""> 
+                    <p>CBR650R 2021</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer" id="footer">
+            <div class="footer-content">
+                <h4>Giáo viên: Thầy Ngô Hữu Quân</h4>
+                <h4>Mentor: anh Lê Đức Thành Đạt</h4>
+            </div>
+            <div>   
+                <a href="javascript:;" onclick="goToTop()">
+                    <img src="./assets/img/footer/mindx.png" alt="">
+                </a>
+            </div>
+            <div class="footer-content">
+                <h3>Thành viên nhóm</h3>
+                <h4>Nguyễn Trần Tuấn Nam</h4>
+                <h4>Nguyễn Thành Duy</h4>
+                <h4>Tạ Văn Mạnh</h4>
+            </div>
+        </div>
+</body>

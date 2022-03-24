@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./form/dangky/formdangky.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form__login" id="dangki">
+      <form action="">
+        <i class="far fa-times-circle"></i>
+        <div class="form__login-header">
+          <h3>Đăng ký</h3>
+          <h4>Đăng nhập</h4>
+        </div>
+        <div class="form__login-container">
+          <table>
+            <tr>
+              <td>Nhập Email</td>
+              <td> <input type="email" placeholder="Email" id=" email" required/></td> 
+            </tr>
+            <tr>
+              <td>Nhập mật khẩu</td>
+              <td><input type="password" size="20" id="password" placeholder="Mật Khẩu " required/></td>
+              <span id="password_error"></span>
+            </tr>
+            <tr>
+              <td>Nhập lại mật khẩu</td>
+              <td><input type="password" size="20" id="repassword"placeholder="Nhập lại mật khẩu" required/></td>
+              <span id="repassword_error"></span>
+            </tr>
+            <tr>
+              <td>Tên người dùng </td>
+              <td><input type="text" placeholder=" Tên người dùng" id="ten" required/></td>
+            </tr>
+            <tr>
+              <td>Ngày sinh</td>
+              <td> <input type="date" id="birth" required/></td>
+            </tr>
+            <tr>
+              <td> Nhập số điện thoại </td>
+              <td> <input type="tel" placeholder="Nhập số điện thoại" id="phone" required/></td>
+            </tr> 
+       
+           
+          </table>
+
+        </div>
+      
+        <div class="form__login-btn">
+          <button onclick="return validate() ">Đăng Ký </button>
+        </div>
+        <div class="form__login-social">
+          <img src="fb.png" alt="">
+          <img src="gg.png" alt="">
+          <img src="instagram.png" alt="">
+        </div>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalabale=no"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Honda</title>
+        <script>
+            function redirect() {
+                window.location.href='dangky.html';
+            }
+            function redirect2() {
+                window.location.href='cbr.html'
+            }
+            
+        </script>
+        <script src="./main.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+          rel="stylesheet"
+        />
+        <link 
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+          crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/style.css"/>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+        
+     
+    </head>
+
+    <body>
+    <div id="main">
+        <div id="header" class="header">
+            <div id="header-search">
+            <div class="logo" id="img-logo">
+                <img src="./assets/img/footer/mindx.png" alt="">
+            </div>
+            <div class="header-search">
+                <input class="header-search-box" id="search" type="search" placeholder="Tìm kiếm">
+            </div>
+            <div class="header-login">
+            <button type="button" data-toggle="modal" data-target="#myModal">Đăng nhập</button>
+            <button type="button" onclick="redirect()" >Đăng ký</button>
+            </div>
+            
+            </div>
+        
+            <ul id="nav">
+                <li>
+                    <a href="#slider">Giới thiệu</a>
+                    <ul class="subnav">
+                        <li><a href="">Giới thiệu Honda Việt Nam</a></li>
+                        <li><a href="">Lịch sử phát triển</a></li>
+                        <li><a href="">Thư của Tổng giám đốc</a></li>
+                        <li><a href="">Triết lý Honda</a></li>
+                        <li><a href="">Tầm nhìn 2030</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#content">Xe máy</a>
+                    <ul class="subnav">
+                        <li><a href="">Sản phẩm</a></li>
+                        <li><a href="">Phụ tùng</a></li>
+                        <li>
+                            <a href="">Phụ kiện</a>
+                            <i class="fa fa-angle-right icon-nav"></i>
+                            <ul class="subnav-sub">
+                               <li><a href="">Phụ kiện xe</a></li>
+                               <li><a href="">Mũ bảo hiểm</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Dịch vụ sau bán hàng</a>
+                            <i class="fa fa-angle-right icon-nav"></i>
+                            <ul class="subnav-sub">
+                                <li><a href="">Chính sách bảo hành</a></li>
+                                <li><a href="">Bảo hành điện tử</a></li>
+                                <li><a href="">Hướng dẫn sử dụng xe</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Tin tức</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#content">Ô Tô</a>
+                    <ul class="subnav">
+                        <li><a href="">Sản phẩm</a></li>
+                        <li><a href="">Phụ tùng</a></li>
+                        <li>
+                            <a href="">Phụ kiện</a>
+                            <i class="fa fa-angle-right icon-nav"></i>
+                            <ul class="subnav-sub">
+                                <li><a href="">Giới thiệu chung</a></li>
+                                <li><a href="">Danh sách phụ kiện</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Dịch vụ sau bán hàng</a>
+                            <i class="fa fa-angle-right icon-nav"></i>
+                            <ul class="subnav-sub">
+                                <li><a href="">Chính sách bảo hành</a></li>
+                                <li><a href="">Bảo hành điện tử</a></li>
+                                <li><a href="">Bảo dưỡng định kỳ</a></li>
+                                <li><a href="">Hướng dẫn sử dụng xe</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#activities-slide">Hoạt động</a>
+                    <ul class="subnav">
+                        <li><a href="">Giới thiệu chung</a></li>
+                        <li><a href="">Hướng dẫn sử dụng</a></li>
+                        <li>
+                            <a href="">Điều khoản sử dụng</a>
+                            <i class="fa fa-angle-right icon-nav"></i>
+                            <ul class="subnav-sub">
+                                <li><a href="">Điều khoản sử dụng  </a></li>
+                                <li><a href="">Chính sách quyền riêng tư</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#news">Tin tức</a>
+                    <ul class="subnav">
+                        <li><a href="">Tin tức chung</a></li>
+                        <li><a href="">Tin tức xe máy</a></li>
+                        <li><a href="">Tin tức ô tô</a></li>
+                        <li><a href="">Doanh số bán hàng</a></li>
+                        <li><a href="">Khuyến mãi</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#review">Đánh giá</a>
+                </li>
+                <li>
+                    <a href="#contact">Liên lạc</a>
+                </li>
+            </ul>
+         
+        </div>
+
+
+        <!-- slider start -->
+        <div class="slider" id="slider">
+            <i class="fa fa-angle-left slider-prev"></i>
+        <div>
+            <ul class="slider-dots">
+                <li class="slider-dot-item active" data-index="0"></li>
+                <li class="slider-dot-item" data-index="1"></li>
+                <li class="slider-dot-item" data-index="2"></li>
+                <li class="slider-dot-item" data-index="3"></li>
+                <li class="slider-dot-item" data-index="4"></li>
+            </ul>
+        </div>
+        <div class="class-wrapper">
+            <div class="slider-main">
+                <div class="slider-item">
+                    <img src="./assets/img/slider/slider1.jpg" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="./assets/img/slider/silder2.png" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="./assets/img/slider/silder3.jpg" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="./assets/img/slider/silder4.png" alt=""
+                ></div>
+                <div class="slider-item">
+                    <img src="./assets/img/slider/silder5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <i class="fa fa-angle-right slider-next"></i>
+        </div>
+         <!-- slider end -->
+
+
+        <!-- about section start -->
+        <div class="about" id="about">
+            <div style="margin-top: 20px">
+            <h1 class="heading" style="margin-top: px"><span>Giới</span> thiệu</h1>
+            </div>
+            
+            <div class="row">
+                <div class="image">
+                    <img src="./assets/img/about us/aboutus.jpg" alt="">
+                </div>
+            
+            <div class="text">
+                <p>Được thành lập vào năm 1996, công ty Honda Việt Nam là liên doanh giữa Công ty Honda Motor (Nhật Bản), Công ty Asian Honda Motor (Thái Lan) và Tổng Công ty Máy Động Lực và Máy Nông nghiệp Việt Nam với 2 ngành sản phẩm chính: xe máy và xe ô tô. 25 năm có mặt tại Việt Nam, Honda Việt Nam đã không ngừng phát triển và trở thành một trong những công ty dẫn đầu trong lĩnh vực sản xuất xe gắn máy và nhà sản xuất ô tô uy tín tại thị trường Việt Nam.</p>
+            </div>
+
+        </div>
+    </div>
+        <!-- about section end -->
+
+        <!-- menu products start  -->
+        <div id="content">
+            <div class="menu-product">
+                <div>
+                    <h1> Sản phẩm</h1>
+                </div>
+                <div>
+                    <div class="product-nav">
+                        <input type="button" class="motorbike-button" value="XE MÁY" onclick="changeMenu()"></input>
+                        <input type="button" class="car-button"value="Ô TÔ" onclick="changeMenu2()"></input>
+                    </div>
+                </div>
+            </div>
+            <div class="motorbike-products">
+                <div class="card">
+                    <div class="card-heart">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="card-cart">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <div class="card-img">
+                        <img src="./assets/img/products/lead125cc.png" alt="">
+                    </div>
+                    <div class="card-title">
+                        LEAD 125cc
+                    </div>
+                    <div class="card-price">
+                        38.990.000 VNĐ
+                    </div>
+                    <div class="card-color">
+                        <h3>Màu sắc</h3>
+                        <span class="card-color-red"></span>
+                        <span class="card-color-black"></span>
+                        <span class="card-color-white"></span>
+                        <span class="card-color-blue"></span>
+                        </div>
+                    <div class="card-action">
+                        <button>Xem chi tiết</button>
+                        <button>Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heart">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="card-cart">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <div class="card-img">
+                        <img src="./assets/img/products/shmode125cc.png" alt="">
+                    </div>
+                    <div class="card-title">
+                        SH MODE 125cc
+                    </div>
+                    <div class="card-price">
+                        55.190.000 VNĐ
+                    </div>
+                    <div class="card-color">
+                        <h3>Màu sắc</h3>
+                        <span class="card-color-red"></span>
+                        <span class="card-color-black"></span>
+                        <span class="card-color-white"></span>
+                        <span class="card-color-blue"></span>
+                        </div>
+                    <div class="card-action">
+                        <button>Xem chi tiết</button>
+                        <button>Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heart">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="card-cart">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <div class="card-img">
+                        <img src="./assets/img/products/future125fi.png" alt="">
+                    </div>
+                    <div class="card-title">
+                        FUTURE 125 FI
+                    </div>
+                    <div class="card-price">
+                        30.290.000 VNĐ
+                    </div>
+                    <div class="card-color">
+                        <h3>Màu sắc</h3>
+                        <span class="card-color-green"></span>
+                        <span class="card-color-black"></span>
+                        <span class="card-color-grey"></span>
+                        <span class="card-color-blue"></span>
+                        </div>
+                    <div class="card-action">
+                        <button class="detail-button">Xem chi tiết</button>
+                        <button class="add-cart-button">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heart">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="card-cart">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <div class="card-img">
+                        <img src="./assets/img/products/winnerx.png" alt="">
+                    </div>
+                    <div class="card-title">
+                        WINNER X
+                    </div>
+                    <div class="card-price">
+                        46.090.000 VNĐ
+                    </div>
+                    <div class="card-color">
+                        <h3>Màu sắc</h3>
+                        <span class="card-color-red"></span>
+                        <span class="card-color-black"></span>
+                        <span class="card-color-grey"></span>
+                        </div>
+                    <div class="card-action">
+                        <button class="detail-button">Xem chi tiết</button>
+                        <button class="add-cart-button">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heart">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="card-cart">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <div class="card-img">
+                        <img src="./assets/img/products/airblade.png" alt="">
+                    </div>
+                    <div class="card-title">
+                        AIR BLADE 125/150
+                    </div>
+                    <div class="card-price">
+                        41.490.000 VNĐ
+                    </div>
+                    <div class="card-color">
+                        <h3>Màu sắc</h3>
+                        <span class="card-color-red"></span>
+                        <span class="card-color-black"></span>
+                        <span class="card-color-grey"></span>
+                        <span class="card-color-blue"></span>
+                        </div>
+                    <div class="card-action">
+                        <button class="detail-button">Xem chi tiết</button>
+                        <button class="add-cart-button">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heart">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="card-cart">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <div class="card-img">
+                        <img src="./assets/img/products/rebell300.png" alt="">
+                    </div>
+                    <div class="card-title">
+                        REBEL 300
+                    </div>
+                    <div class="card-price">
+                        125.000.000 VNĐ
+                    </div>
+                    <div class="card-color">
+                        <h3>Màu sắc</h3>
+                        <span class="card-color-black"></span>
+                        <span class="card-color-grey"></span>
+                        </div>
+                    <div class="card-action">
+                        <button class="detail-button">Xem chi tiết</button>
+                        <button class="add-cart-button">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heart">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="card-cart">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <div class="card-img">
+                        <img src="./assets/img/products/cbr300.png" alt="">
+                    </div>
+                    <div class="card-title">
+                        CBR300
+                    </div>
+                    <div class="card-price">
+                        140.000.000 VNĐ
+                    </div>
+                    <div class="card-color">
+                        <h3>Màu sắc</h3>
+                        <span class="card-color-red"></span>
+                        <span class="card-color-black"></span>
+                        </div>
+                    <div class="card-action">
+                        <button class="detail-button">Xem chi tiết</button>
+                        <button class="add-cart-button">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heart">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="card-cart">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <div class="card-img">
+                        <img src="./assets/img/products/cbr650.png" alt="">
+                    </div>
+                    <div class="card-title">
+                        CBR650R phiên bản 2021
+                    </div>
+                    <div class="card-price">
+                        253.990.000 VNĐ
+                    </div>
+                    <div class="card-color">
+                        <h3>Màu sắc</h3>
+                        <span class="card-color-red"></span>
+                        <span class="card-color-black"></span>
+                        </div>
+                     <div class="card-action">
+                        <button class="detail-button" onclick='redirect2()'>Xem chi tiết</button>
+                        <button class="add-cart-button">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+            <div class="car-products">
+                <div class="card">
+                    <div class="card-heart">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="card-cart">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <div class="card-img">
+                        <img src="https://cdn.honda.com.vn/automobiles/April2020/dK2EJL3JTn3RXgYQ2gzv.png" alt="">
+                    </div>
+                    <div class="card-title">
+                        HR-V
+                    </div>
+                    <div class="card-price">
+                        786.000.000 VNĐ
+                    </div>
+                    <div class="card-color">
+                        <h3>Màu sắc</h3>
+                        <span class="card-color-red"></span>
+                        <span class="card-color-black"></span>
+                        <span class="card-color-white"></span>
+                        <span class="card-color-blue"></span>
+                        <span class="card-color-grey"></span>
+                        </div>
+                    <div class="card-action">
+                        <button>Xem chi tiết</button>
+                        <button>Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heart">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="card-cart">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <div class="card-img">
+                        <img src="https://cdn.honda.com.vn/automobiles/July2020/aPO6u8CJjg1YE7WdEk42.png" alt="">
+                    </div>
+                    <div class="card-title">
+                        CR-V
+                    </div>
+                    <div class="card-price">
+                        998.000.000 VNĐ
+                    </div>
+                    <div class="card-color">
+                        <h3>Màu sắc</h3>
+                        <span class="card-color-black"></span>
+                        <span class="card-color-white"></span>
+                        <span class="card-color-blue"></span>
+                        </div>
+                    <div class="card-action">
+                        <button>Xem chi tiết</button>
+                        <button>Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heart">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="card-cart">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <div class="card-img">
+                        <img src="https://cdn.honda.com.vn/automobiles/July2020/aPO6u8CJjg1YE7WdEk42.png" alt="">
+                    </div>
+                    <div class="card-title">
+                        FUTURE 125 FI
+                    </div>
+                    <div class="card-price">
+                        30.290.000 VNĐ
+                    </div>
+                    <div class="card-color">
+                        <h3>Màu sắc</h3>
+                        <span class="card-color-green"></span>
+                        <span class="card-color-black"></span>
+                        <span class="card-color-grey"></span>
+                        <span class="card-color-blue"></span>
+                        </div>
+                    <div class="card-action">
+                        <button class="detail-button">Xem chi tiết</button>
+                        <button class="add-cart-button">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heart">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="card-cart">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <div class="card-img">
+                        <img src="https://cdn.honda.com.vn/automobiles/December2021/q5Jlxw0vQ0KX45AeH1Rn.png" alt="">
+                    </div>
+                    <div class="card-title">
+                        WINNER X
+                    </div>
+                    <div class="card-price">
+                        46.090.000 VNĐ
+                    </div>
+                    <div class="card-color">
+                        <h3>Màu sắc</h3>
+                        <span class="card-color-red"></span>
+                        <span class="card-color-black"></span>
+                        <span class="card-color-grey"></span>
+                        </div>
+                    <div class="card-action">
+                        <button class="detail-button">Xem chi tiết</button>
+                        <button class="add-cart-button">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heart">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="card-cart">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <div class="card-img">
+                        <img src="https://cdn.honda.com.vn/automobiles/April2021/VLv5LZxp1xAUqmUFsOW0.png" alt="">
+                    </div>
+                    <div class="card-title">
+                        AIR BLADE 125/150
+                    </div>
+                    <div class="card-price">
+                        41.490.000 VNĐ
+                    </div>
+                    <div class="card-color">
+                        <h3>Màu sắc</h3>
+                        <span class="card-color-red"></span>
+                        <span class="card-color-black"></span>
+                        <span class="card-color-grey"></span>
+                        <span class="card-color-blue"></span>
+                        </div>
+                    <div class="card-action">
+                        <button class="detail-button">Xem chi tiết</button>
+                        <button class="add-cart-button">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heart">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="card-cart">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <div class="card-img">
+                        <img src="https://cdn.honda.com.vn/motorbikes/January2020/QzjJbQKND9kbnutg2ga2.png" alt="">
+                    </div>
+                    <div class="card-title">
+                        REBEL 300
+                    </div>
+                    <div class="card-price">
+                        125.000.000 VNĐ
+                    </div>
+                    <div class="card-color">
+                        <h3>Màu sắc</h3>
+                        <span class="card-color-black"></span>
+                        <span class="card-color-grey"></span>
+                        </div>
+                    <div class="card-action">
+                        <button class="detail-button">Xem chi tiết</button>
+                        <button class="add-cart-button">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heart">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="card-cart">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <div class="card-img">
+                        <img src="https://cdn.honda.com.vn/motorbikes/January2020/pNXae5D0cCMHRWgzaAyw.png" alt="">
+                    </div>
+                    <div class="card-title">
+                        CBR300
+                    </div>
+                    <div class="card-price">
+                        140.000.000 VNĐ
+                    </div>
+                    <div class="card-color">
+                        <h3>Màu sắc</h3>
+                        <span class="card-color-red"></span>
+                        <span class="card-color-black"></span>
+                        </div>
+                    <div class="card-action">
+                        <button class="detail-button">Xem chi tiết</button>
+                        <button class="add-cart-button">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heart">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="card-cart">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <div class="card-img">
+                        <img src="https://cdn.honda.com.vn/motorbike-versions/December2021/7aLu8ZyVN8rjGSHvJMZ9.png" alt="">
+                    </div>
+                    <div class="card-title">
+                        CBR650R phiên bản 2021
+                    </div>
+                    <div class="card-price">
+                        253.990.000 VNĐ
+                    </div>
+                    <div class="card-color">
+                        <h3>Màu sắc</h3>
+                        <span class="card-color-red"></span>
+                        <span class="card-color-black"></span>
+                        </div>
+                     <div class="card-action">
+                        <button class="detail-button">Xem chi tiết</button>
+                        <button class="add-cart-button">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- menu products end  -->
+
+<!-- activities slider section starts -->
+<div class="ahihi">
+    <div>
+        <h1> Hoạt động</h1>
+    </div>
+    <div class="activities-slide" id="activities-slide">
+        <img src="./assets/img/activities/hotrocongdong.png" alt="" id="slideimage">
+    </div>
+</div>
+
+<!-- activities slider section end -->
+
+<!-- news section starts -->
+<div class="news-area">
+<div>
+    <h1> Tin tức</h1>
+</div>
+<div class="news" id="news">
+    <div class="news-item img--large">
+        <img src="./assets/img/news/anh2.jpg" alt="">
+        <div class="news-content">
+            Honda Việt Nam giới thiệu phiên bản hoàn toàn mới LEAD 125cc - Lướt thanh lịch, “LEAD” cuộc sống -
+        </div>
+    </div>
+    <div class="news-item">
+        <img src="./assets/img/news/anh1.png" alt="">
+        <div class="news-content"> Honda Việt Nam phối hợp với Bưu Điện Việt Nam triển khai thí điểm dự án sử dụng xe điện giao hàng
+        </div>
+    </div>
+    <div class="news-item">
+        <img src="./assets/img/news/anh3.jpg" alt="">
+        <div class="news-content">Honda Việt Nam giới thiệu loạt phiên bản mới mẫu xe phân khối lớn CB1000R, CB650R và CBR650R</div>
+    </div>
+    <div class="news-item">
+        <img src="./assets/img/news/anh4.jpg" alt="">
+        <div class="news-content">Honda Việt Nam giới thiệu WINNER X thế hệ mới 2022 -BỨT TỐC, LÊN NGÔI-</div>
+    </div>
+    <div class="news-item">
+        <img src="./assets/img/news/anh5.jpg" alt="">
+        <div class="news-content">
+            Honda Việt Nam giới thiệu phiên bản mới mẫu xe phân khối lớn Gold Wing và Rebel 50
+        </div>
+    </div>
+</div>
+</div>
+
+ 
+
+<!-- news section end -->
+ 
+
+
+
+ <!-- review section starts  -->
+<div class="review" id="review">
+
+     <h1 class="heading"> Đánh <span> giá</span> </h1>
+        <div class="box-container">
+        <div class="box">
+                <img src="./assets/img/review/quote-img.png" alt="" class="quote">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
+                <img src="./assets/img/review/pic-1.png" class="user" alt="">
+                <h3>john deo</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                </div>
+        
+        <div class="box">
+                    <img src="./assets/img/review/quote-img.png" alt="" class="quote">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
+                    <img src="./assets/img/review/pic-2.png" class="user" alt="">
+                    <h3>john deo</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+        </div>
+                
+        <div class="box">
+                    <img src="./assets/img/review/quote-img.png" alt="" class="quote">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
+                    <img src="./assets/img/review/pic-3.png" class="user" alt="">
+                    <h3>john deo</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+</div>
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+<div class="contact" id="contact">
+ 
+    <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5872.461984408349!2d106.68813465272675!3d10.780869695831072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f29a47deb79%3A0xb87f4f63f262918a!2zVHLGsOG7nW5nIGjhu41jIGPDtG5nIG5naOG7hyBNaW5kWCDEkGnhu4duIEJpw6puIFBo4bun!5e0!3m2!1svi!2s!4v1643949021335!5m2!1svi!2s" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
+
+        <form action="">
+            <h3>LIÊN LẠC</h3>
+
+            <div class="inputBox">
+                <input type="text" placeholder="Họ và tên">
+                <span class="fa fa-user"></span></input>
+            </div>
+
+            <div class="inputBox">
+                <input type="email" placeholder="Email">
+                <span class="fa fa-envelope"></span>
+            </input>
+            </div>
+
+            <div class="inputBox">
+                <input type="number" placeholder="Số điện thoại"> 
+                <span class="fa fa-phone"></span> </input>
+            </div>
+
+            <input type="submit" value="GỬI" class="btn">
+            
+        </form>
+
+    </div>
+
+</div>
+<!-- contact section ends -->
+
+<!-- go to top -->
+<div class="gototop" id="gototop">
+    <a href="javascript:;" onclick="goToTop()" ><i class="fa fa-arrow-circle-up"></i></a>
+</div>
+
+
+<div class="footer" id="footer">
+    <div class="footer-content">
+        <h4>Giáo viên: Thầy Ngô Hữu Quân</h4>
+        <h4>Mentor: anh Lê Đức Thành Đạt</h4>
+    </div>
+    <div>   
+        <a href="javascript:;" onclick="goToTop()">
+            <img src="./assets/img/footer/mindx.png" alt="">
+        </a>
+    </div>
+    <div class="footer-content">
+        <h3>Thành Viên Nhóm 7 :</h3>
+        <h4>Nguyễn Trần Tuấn Nam</h4>
+        <h4>Nguyễn Thành Duy</h4>
+        <h4>Tạ Văn Mạnh</h4>
+    </div>
+</div>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Đăng nhập</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <form action="/action_page.php">
+                <div class="form-group">
+                  <label for="email">Emai: </label>
+                  <input type="email" class="form-control" placeholder="Enter email" id="email">
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Mật khẩu</label>
+                  <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                </div>
+                <div class="form-group form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"> Lưu mật khẩu
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-danger">Đăng nhập</button>
+                <div class="login-img">
+                <a href=""><img src="./assets/img/login/fb.png" alt=""></a>
+                <a href=""><img src="./assets/img/login/gg.png" alt=""></a>
+                <a href=""><img src="./assets/img/login/instagram.png" alt=""></a>
+                </div>
+              </form>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+  <!-- Test -->
+  <div class="modal">
+      <div class="modal-overlay">
+
+      </div>
+      <div class="modal-body">
+          <div class="modal-inner">
+
+          </div>
+
+      </div>
+  </div>
+
+   
+    
+    </body>
+
+</html>

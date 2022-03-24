@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {list-style-type: none;}
+a  {text-decoration: none;}
+
+html {font-family: 'Be Vietnam Pro', sans-serif; font-size: 62.5%; transition: .5s;}
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: url("image/background.jpg") top center/cover no-repeat ;
+}
+.form__login {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__login form {
+    width: 450px;
+    height: 600px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.form__login form > i {
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    top: -15px;
+    right: -15px;
+    float: right;
+}
+
+.form__login-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.form__login-header h3 {
+    font-size: 20px;
+    color: #cc0000;
+}
+
+.form__login-header h4 {
+    font-size: 13px;
+}
+.form__login-container{
+    font-size: 13px;
+}
+.form__login-container input {
+    width: 145%;
+    padding: 10px 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.form__login-content {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+.form__login-content p {
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+.form__login-content p input {
+    /* margin-right: 5px; */
+    cursor: pointer;
+    font-size: 15px;
+    
+}
+.form__login-content p span {
+    font-size: 15px;
+    position: absolute;
+    margin-left: 20px
+}
+.form__login-content a {
+    font-size: 12px;
+    margin-left: 160px;
+}
+.form__login-content a:hover {
+    text-decoration: underline;
+}
+.form__login-btn {
+    margin: 25px 0;
+}
+.form__login-btn button {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #e71f1ff8;
+    color:white;
+}
+.form__login-btn button:hover {
+    /* opacity: .5; */
+    border: 1px solid #f03131;
+}
+.form__login-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+.form__login-social > i {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin: 0 15px;
+}
+.form__login-social > img {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    margin: 0 15px;
+}
